@@ -5,6 +5,10 @@
 #lineart{
     padding: 6vw;
 }
+
+#glasur, #donut_fill .cls-2, #sprinkles_fill .cls-3,#sprinkles_fill .cls-4, #sprinkles_fill .cls-5, #sprinkles_fill .cls-6, #sprinkles_fill .cls-7, #sprinkles_fill .cls-8, #sprinkles_fill .cls-9, #sprinkles_fill .cls-10, #sprinkles_fill .cls-11, #sprinkles_fill .cls-12 {
+    fill: transparent;
+}
 #colorboxes{
     margin-top: 3vw;
     display: flex;
@@ -18,6 +22,7 @@
     height: 5vw;
     width: 5vw;
     border: grey solid 1px;
+    border-radius: 20%;
 }
 
 .color1{
