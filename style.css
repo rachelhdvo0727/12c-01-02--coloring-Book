@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#colorboxes{
+    margin-top: 3vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+#colorwheel, .chosen{
+    margin-top: 2vw;
+}
+.box, .chosen{
+    height: 5vw;
+    width: 5vw;
+    border: grey solid 0.5vw;
+}
