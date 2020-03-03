@@ -18,34 +18,8 @@
 #colorwheel, .chosen{
     margin-top: 2vw;
 }
-.box, .chosen{
-    height: 5vw;
-    width: 5vw;
-    border: grey solid 1px;
-    border-radius: 20%;
-}
 
-.color1{
-    background-color: white;
-}
-.color2{
-    background-color: darkblue;
-}
-.color3{
-    background-color: darkgray;
-}
-.color4{
-    background-color: yellow;
-}
-.color5{
-    background-color: darkgreen;
-}
-.color6{
-    background-color: pink;
-}
-.color7{
-    background-color: rgb(187, 148, 41);
-}
-.color8{
-    background-color: hotpink;
+.box{
+    stroke: darkgray;
+    stroke-width: 2px;
 }
