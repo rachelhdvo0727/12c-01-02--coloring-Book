@@ -2,7 +2,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+#lineart{
+    padding: 6vw;
+}
 #colorboxes{
     margin-top: 3vw;
     display: flex;
@@ -15,5 +17,30 @@
 .box, .chosen{
     height: 5vw;
     width: 5vw;
-    border: grey solid 0.5vw;
+    border: grey solid 1px;
+}
+
+.color1{
+    background-color: white;
+}
+.color2{
+    background-color: darkblue;
+}
+.color3{
+    background-color: darkgray;
+}
+.color4{
+    background-color: yellow;
+}
+.color5{
+    background-color: darkgreen;
+}
+.color6{
+    background-color: pink;
+}
+.color7{
+    background-color: rgb(187, 148, 41);
+}
+.color8{
+    background-color: hotpink;
 }
