@@ -2,6 +2,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 label{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -10,7 +11,7 @@ label{
 }
 
 #colorboxes{
-    margin-top: 3vw;
+    margin: 3vw 2vw;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
