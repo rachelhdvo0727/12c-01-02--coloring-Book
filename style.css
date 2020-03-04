@@ -2,24 +2,42 @@
     margin: 0;
     box-sizing: border-box;
 }
+label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 #lineart{
-    padding: 6vw;
+    padding: 2vw 6vw;
 }
 
-/* #glasur, #donut_fill .cls-2, #sprinkles_fill .cls-3,#sprinkles_fill .cls-4, #sprinkles_fill .cls-5, #sprinkles_fill .cls-6, #sprinkles_fill .cls-7, #sprinkles_fill .cls-8, #sprinkles_fill .cls-9, #sprinkles_fill .cls-10, #sprinkles_fill .cls-11, #sprinkles_fill .cls-12 {
-    fill: transparent;
-} */
 #colorboxes{
     margin-top: 3vw;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
-#colorwheel, .chosen{
+
+#colorboxes:hover, #colorwheel:hover{
+    cursor: pointer;
+}
+
+#colorwheel{
+    margin-top: 2vw;
+}
+.currentcolor{
+    display: flex;
+    flex-flow: column wrap;
+}
+.colorbox{
+    align-self: center;
+    height: 5vw;
+    width: 7vw;
+    border: black solid 1.5px;
+    border-radius: 10%;
     margin-top: 2vw;
 }
 
-.box{
-    stroke: darkgray;
-    stroke-width: 2px;
+@media only screen and (min-width: 780px){
+    #lineart{
+        padding: 3vw 30vw;
+    }
 }
