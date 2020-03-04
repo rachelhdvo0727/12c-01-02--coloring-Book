@@ -18,6 +18,7 @@ async function loadSVG(){
     const mySVG = await response.text();
     document.querySelector("#lineart").innerHTML= mySVG;
     
+      
     //choose a color
     HTML.colorBoxes.forEach((element) => {
         element.addEventListener("click", function(evt){
@@ -38,7 +39,7 @@ function getColorsFromBoxes(){
     console.log("getColorsFromBoxes");
     //show the current color
     document.querySelector(".currentcolor .colorbox").style.backgroundColor = newfill;
-
+    
     //click a path on svg
     document.querySelectorAll("#donut_fill .cls-2").forEach((elm) => {
         //all fills belong to the dough

@@ -16,10 +16,18 @@ label{
     justify-content: space-evenly;
 }
 
-#colorboxes:hover, #colorwheel:hover{
+#glasur_fill path:hover, 
+#donut_fill path:hover, 
+polygon:hover{
     cursor: pointer;
+    fill: black;
+    opacity: 10%;
 }
 
+#colorwheel:hover,
+.box:hover {
+    cursor: pointer;
+}
 #colorwheel{
     margin-top: 2vw;
 }
