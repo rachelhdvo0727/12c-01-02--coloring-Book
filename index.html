@@ -15,18 +15,21 @@
             <label for="color">Choose a color: </label>
             <br>
             <input type="color" name="colorwheel" id="colorwheel">
-            <div class="chosen"></div>
         </div>
-        <svg  width="250" height="250" viewBox="0 0 350 350">
-        <rect class="color1 box" x="5" y="3" width="30" height="30" fill="black"/>
-       <rect class="color2 box"  x="40"y="3" width="30" height="30" fill="darkblue"/>
-       <rect class="color3 box"  x="75" y="3"width="30" height="30"fill="darkgray"/>
-       <rect class="color4 box"  x="110" y="3" width="30" height="30" fill="yellow"/>
-        <rect class="color5 box"  x="145" y="3" width="30" height="30" fill="darkgreen"/>
-        <rect class="color6 box" x="180" y="3" width="30" height="30" fill="pink"/>
-        <rect class="color7 box" x="215" y="3" width="30" height="30" fill="rgb(187, 148, 41)"/>
-      <rect class="color8 box" x="250" y="3" width="30" height="30" fill="hotpink"/>
+        <svg  width="250" height="250" viewBox="0 0 280 280">
+        <rect class="color1 box" x="5" y="3" rx="5" ry="5" width="30" height="30" fill="black"/>
+       <rect class="color2 box"  x="40"y="3" rx="5" ry="5" width="30" height="30" fill="darkgray"/>
+       <rect class="color3 box"  x="75" y="3" rx="5" ry="5" width="30" height="30"fill=" darkblue"/>
+       <rect class="color4 box"  x="110" y="3" rx="5" ry="5" width="30" height="30" fill="yellow"/>
+        <rect class="color5 box"  x="145" y="3" rx="5" ry="5" width="30" height="30" fill="darkgreen"/>
+        <rect class="color6 box" x="180" y="3" rx="5" ry="5" width="30" height="30" fill="pink"/>
+        <rect class="color7 box" x="215" y="3" rx="5" ry="5" width="30" height="30" fill="rgb(187, 148, 41)"/>
+      <rect class="color8 box" x="250" y="3" rx="5" ry="5" width="30" height="30" fill="hotpink"/>
     </svg>
+    <div class="currentcolor">
+        <label for="currentcolor">Current color: </label>
+        <div class="colorbox"></div>
+    </div>
     </section>
 
     <!-- Display the chosen color -->
