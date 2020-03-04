@@ -11,7 +11,7 @@ function init(){
     HTML.colorBoxes = document.querySelectorAll(".color1, .color2, .color3, .color4, .color5, .color6, .color7, .color8");
     HTML.chosenColor = document.querySelector("#colorwheel");
     HTML.allPaths = document.querySelectorAll("#donut_fill path, #donut_fill polygon, #glasur_fill path, sprinkles_fill polygon");
-    
+
     loadSVG();
 
     //choose a color
@@ -60,9 +60,9 @@ function getColorsFromBoxes(){
 
 function getColorFromTheWheel(){
     console.log("getColorFromTheWheel");
-      //show the current color
+    //show the current color
     document.querySelector(".currentcolor .colorbox").style.backgroundColor = freestyleColor;
-
+    
     //click a path on svg
     document.querySelectorAll("#donut_fill .cls-2").forEach((elm) => {
         //all fills belong to the dough
@@ -71,11 +71,11 @@ function getColorFromTheWheel(){
     document.querySelector("#glasur").addEventListener("click", clickGlasur2);
     document.querySelectorAll("#sprinkles_fill .cls-3").forEach((elm) => {
         elm.addEventListener("click", function(){
-        console.log("clickKrymmel");
-        elm.style.fill = freestyleColor;
-    })
-});
-
+            console.log("clickKrymmel");
+            elm.style.fill = freestyleColor;
+        })
+    });
+    
 }
 
 function clickTheDough(){
@@ -88,7 +88,7 @@ function clickTheDough(){
 function clickGlasur(evt){
     console.log("clickGlasur");
     evt.target.style.fill= newfill;
-
+    
 }
 
 function clickTheDough2(){
