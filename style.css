@@ -22,7 +22,7 @@ label{
 polygon:hover{
     cursor: pointer;
     fill: black;
-    opacity: 10%;
+    opacity: 5%;
 }
 
 #colorwheel:hover,
@@ -45,6 +45,44 @@ polygon:hover{
     margin-top: 2vw;
 }
 
+.dialog {
+    display: none;
+  }
+  
+  .dialog.show {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .dialogcontent {
+    background-color: rgb(56, 97, 56);
+    padding: 10vw 8vw 8vw 8vw;
+    position: relative;
+  }
+  .dialogcontent h1{
+      color: wheat;
+  }
+  .dialogcontent button{
+      color: wheat;
+      margin: 1.5vw;
+  }
+  .dialog .closebutton {
+    position: absolute;
+    top: 4vw;
+    right: 4vw;
+    border: none;
+    background-color: transparent;
+    font-size: 90%;
+    color: darkgray;
+  }
 @media only screen and (min-width: 780px){
     #lineart{
         padding: 3vw 30vw;
