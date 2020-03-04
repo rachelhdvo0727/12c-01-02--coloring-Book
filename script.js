@@ -8,6 +8,10 @@ function init(){
     HTML.colorBoxes = document.querySelectorAll(".color1, .color2, .color3, .color4, .color5, .color6, .color7, .color8");
 
     loadSVG();
+    //choose a color
+    HTML.colorBoxes.forEach((element) => {
+        element.addEventListener("click", clickABox);
+    });
 }
 
 async function loadSVG(){
@@ -16,14 +20,17 @@ async function loadSVG(){
     const mySVG = await response.text();
     document.querySelector("#lineart").innerHTML= mySVG;
 
-    //choose a color
-    HTML.colorBoxes.forEach((elm) => {
-        elm.addEventListener("click", clickABox);
+    //click a path on svg
+    document.querySelectorAll("#donut_fill .cls-2").forEach((elm) => {
+        elm.addEventListener("click", clickTheDough);
     });
-
     document.querySelector("#glasur").addEventListener("click", clickGlasur);
-    document.querySelectorAll("#donut_fill .cls-2").forEach((element) => {
-        element.addEventListener("click", clickTheBun);
+    document.querySelectorAll("#sprinkles_fill .cls-3").forEach((elm) => 
+    {
+        elm.addEventListener("click", function(){
+            console.log("clickKrymmel");
+            elm.style.fill = newfill;
+        });
     });
 }
 
@@ -32,14 +39,15 @@ function clickABox(evt){
     newfill = evt.target.getAttribute("fill");
 }
 
+function clickTheDough(){
+    console.log("clickTheDough");
+    document.querySelectorAll("#donut_fill .cls-2").forEach((elm) => {
+        elm.style.fill = newfill;
+    });
+}
+
 function clickGlasur(evt){
     console.log("clickGlasur");
     evt.target.style.fill= newfill;
 }
 
-function clickTheBun(){
-    console.log("clickTheBun");
-    document.querySelectorAll("#donut_fill .cls-2").forEach((element) => {
-        element.style.fill = newfill;
-    });
-}
