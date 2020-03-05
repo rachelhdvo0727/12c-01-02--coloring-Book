@@ -3,10 +3,14 @@
 window.addEventListener("DOMContentLoaded", init);
 const HTML ={};
 let newfill, freestyleColor;
-let done = false;
+let array;
 let isFilledBoxes;
 let isFilledWheel;
-
+//Make dataset.check
+//Make an empty array
+//add select all elements - forEach
+    //elm.target.style.fill=""
+    //array.push(elm)
 function init(){
     HTML.colorBoxes = document.querySelectorAll(".color1, .color2, .color3, .color4, .color5, .color6, .color7, .color8");
     HTML.chosenColor = document.querySelector("#colorwheel");
